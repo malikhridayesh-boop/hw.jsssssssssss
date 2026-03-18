@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <script>
+        async function div(x, y) {
+            var res = await x/y;
+            fun1(res);
+        }
+        function fun1(r) {
+            document.getElementById("result").innerHTML= "Division = " + r;
+        }
+        div(100000,8)
+    </script>
+</body>
+</html>
